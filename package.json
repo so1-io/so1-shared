@@ -1,17 +1,43 @@
 {
-  "name": "@so1/shared",
+  "name": "@so1-io/shared",
   "version": "0.1.0",
   "description": "Shared types, contracts, and validation schemas for so1 platform",
-  "private": true,
+  "private": false,
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/so1-io/so1-shared.git"
+  },
+  "keywords": [
+    "so1",
+    "types",
+    "shared",
+    "contracts"
+  ],
+  "author": "so1-io",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "lint": "eslint src/**/*.ts"
   },
   "dependencies": {
-    "zod": "^4.3.6"
+    "zod": "^3.23.0"
   },
   "devDependencies": {
     "@types/node": "^20",
