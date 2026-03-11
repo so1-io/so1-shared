@@ -29,6 +29,8 @@ export var ErrorCode;
     // Validation errors
     ErrorCode["BAD_REQUEST"] = "BAD_REQUEST";
     ErrorCode["VALIDATION_ERROR"] = "VALIDATION_ERROR";
+    // Not found
+    ErrorCode["NOT_FOUND"] = "NOT_FOUND";
     // Integration errors
     ErrorCode["GITHUB_ERROR"] = "GITHUB_ERROR";
     ErrorCode["N8N_ERROR"] = "N8N_ERROR";

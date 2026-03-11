@@ -1,19 +1,19 @@
 {
   "name": "@so1-io/shared",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Shared types, contracts, and validation schemas for so1 platform",
   "private": false,
   "type": "module",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.d.ts",
-      "import": "./src/index.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     }
   },
   "files": [
-    "src",
+    "dist",
     "README.md"
   ],
   "publishConfig": {
